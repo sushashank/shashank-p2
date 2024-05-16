@@ -1,11 +1,6 @@
-import random
-import string
+def welcome_message(name):
+    return f"Welcome, {name}! We're glad to have you here."
 
-def generate_random_password(length=12):
-    characters = string.ascii_letters + string.digits + string.punctuation
-    password = ''.join(random.choice(characters) for _ in range(length))
-    return password
-
-# Example: Generate a random password of length 16
-random_password = generate_random_password(16)
-print("Random Password:", random_password)
+# Example: 
+user_name = input("Please enter your name: ")
+print(welcome_message(user_name))
